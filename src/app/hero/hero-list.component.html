@@ -1,0 +1,5 @@
+<h2>Hero List</h2>
+<li *ngfor = 'let hero of heros' (click)="selectHero(hero)"  >
+    {{hero.Name}}
+</li>
+<hero-detail *ngif="selectedHero"></hero-detail>
