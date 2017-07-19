@@ -1,5 +1,16 @@
 <h2>Hero List</h2>
-<li *ngfor = 'let hero of heros' (click)="selectHero(hero)"  >
-    {{hero.Name}}
+
+<div id="search-component">
+  <h4>Hero Search</h4>
+  <input #searchBox id="search-box" (keyup)="search(searchBox.value)" />
+</div>
+<ul class="heroes">
+<li *ngFor = 'let hero of heroes '  (click)="selectHero(hero)"  [class.selected] = 'hero===selectedHero'  >
+   <span class="badge">{{hero.id}}</span>
+   <span>{{hero.name}}</span>
+   <button class="delete" (click)="deleteHero(hero)" >x</button>
 </li>
-<hero-detail *ngif="selectedHero"></hero-detail>
+</ul>
+<div *ngIf="selectedHero">
+    <h2><a routerLink="../heroes/{{selectedHero.id}}">{{selectedHero.name | uppercase}}</a> is my hero</h2>   
+</div>
