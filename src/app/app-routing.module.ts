@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found.component';
-import { HeroListComponent  } from './hero/hero-list.component';
 
 
 const  routes: Routes = [
-    { path: '', redirectTo:'heroes',pathMatch:'full' },
-    // { path: 'heroes', component: HeroListComponent },
+    { path: '', redirectTo:'dashboard', pathMatch: 'full' },
+    { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule'},
     { path: 'heroes', loadChildren: './hero/hero.module#HeroModule' },
     { path: '**', component: PageNotFoundComponent }
 ];
