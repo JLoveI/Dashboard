@@ -2,8 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule} from '@angular/http';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from "./shared/shared.module";
 
 import { AppComponent } from './app.component';
@@ -20,7 +18,6 @@ import { HeroListComponent  } from "./hero/hero-list.component";
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule,
     SharedModule
   ],
   providers:[LogService],

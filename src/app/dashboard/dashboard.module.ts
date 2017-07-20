@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from "@angular/forms";
 import { HttpModule } from "@angular/http";
 
-import { DashboardRoutingModule } from "./dashboard.routing";
+import { DashboardRoutingModule } from "./dashboard-routing.module";
 import { DashboardComponent  } from "./dashboard.component";
 
 @NgModule({

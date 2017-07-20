@@ -1,19 +1,71 @@
-<nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar">
-    <ul class="nav nav-pills flex-column">
-        <li class="nav-item disabled logo">
-            <i class="fa fa-file-text" aria-hidden="true"></i> 基金管理系统-Link
-        </li>
-        <li class="nav-item">
-            <a class="nav-link active" href="#">Overview <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Reports</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Analytics</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Export</a>
-        </li>
-    </ul>
-</nav>
+<ul class="nav nav-pills flex-column">
+    <li class="nav-item disabled logo">
+        基金管理系统-Link
+    </li>
+    <li class="nav-item">
+        <a routerLink="../dashboard" routerLinkActive="active-link" class="nav-link">
+                <span class="col-md-2 col-sm-2  clear-pd">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                </span>
+                <span class="col-md-8 col-sm-10">首页</span>
+                <span class="col-md-2 col-sm-0 clear-pd pull-right hidden">
+                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                </span>
+            </a>
+    </li>
+    <li class="nav-item">
+        <a routerLink="../fund" routerLinkActive="active-link" class="nav-link">
+                <span class="col-md-2 col-sm-2  clear-pd">
+                    <i class="fa fa-money" aria-hidden="true"></i>
+                </span>
+                <span class="col-md-8 col-sm-10">基金管理</span>
+                <span class="col-md-2 col-sm-0 clear-pd pull-right hidden">
+                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                </span>
+            </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link"  class="nav-link">
+                <span class="col-md-2 col-sm-2  clear-pd">
+                    <i class="fa fa-product-hunt" aria-hidden="true"></i>
+                </span>
+                <span class="col-md-8 col-sm-10">投资项目管理</span>
+                <span class="col-md-2 col-sm-0 clear-pd pull-right hidden">
+                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                </span>
+            </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" class="nav-link">
+                <span class="col-md-2 col-sm-2  clear-pd">
+                    <i class="fa fa-id-badge" aria-hidden="true"></i>
+                </span>
+                <span class="col-md-8 col-sm-10">投资人管理</span>
+                <span class="col-md-2 col-sm-0 clear-pd pull-right hidden">
+                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                </span>
+            </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" class="nav-link">
+                <span class="col-md-2 col-sm-2  clear-pd">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </span>
+                <span class="col-md-8 col-sm-10">分析模块</span>
+                <span class="col-md-2 col-sm-0 clear-pd pull-right hidden">
+                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                </span>
+            </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link"  class="nav-link">
+                <span class="col-md-2 col-sm-2  clear-pd">
+                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                </span>
+                <span class="col-md-8 col-sm-10">文件库</span>
+                <span class="col-md-2 col-sm-0 clear-pd pull-right hidden">
+                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                </span>
+            </a>
+    </li>
+</ul>

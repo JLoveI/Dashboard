@@ -1,0 +1,79 @@
+<div class="dashboard" id="fund">
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <a class="navbar-brand" href="#">基金列表</a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="btn-group ml-auto" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary"><i class="fa fa-plus-square" aria-hidden="true"></i><span class="pd-5">添加</span></button>
+        <button type="button" class="btn btn-secondary"><i class="fa fa-window-close" aria-hidden="true"></i><span class="pd-5">删除</span></button>
+        <button type="button" class="btn btn-secondary"><i class="fa fa-download" aria-hidden="true"></i><span class="pd-5">导出</span></button>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="pd-5">
+    <table class="table table-hover table-bordered">
+      <thead>
+        <tr>
+          <th> <i class="fa {{allChecked ? 'fa-check-square-o' : 'fa-square-o'}}"  aria-hidden="true"></i> </th>
+          <th>基金名称</th>
+          <th>基金状态</th>
+          <th>认缴规模</th>
+          <th>已缴款</th>
+
+          <th>设立时间</th>
+          <th>行业偏好</th>
+          <th>投资经理</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr (click)="navToFundDetail()">
+          <td scope="row"><i class="fa fa-square-o" aria-hidden="true"></i></td>
+          <td>基金1号</td>
+          <td>已募未投</td>
+          <td>1000万</td>
+          <td>200万</td>
+          <td>2016-12-1</td>
+          <td>互联网</td>
+          <td>张斌</td>
+        </tr>
+        <tr (click)="navToFundDetail()">
+          <td scope="row"><i class="fa fa-square-o" aria-hidden="true"></i></td>
+          <td>基金2号</td>
+          <td>已投资</td>
+          <td>200万</td>
+          <td>200万</td>
+          <td>2016-12-1</td>
+          <td>金融页</td>
+          <td>张斌</td>
+        </tr>
+         <tr (click)="navToFundDetail()">
+          <td scope="row"><i class="fa {{checked ? 'fa-check-square-o' : 'fa-square-o'}}" aria-hidden="true"></i></td>
+          <td>基金3号</td>
+          <td>已退出</td>
+          <td>400万</td>
+          <td>400万</td>
+          <td>2016-12-1</td>
+          <td>互联网</td>
+          <td>张斌</td>
+        </tr>
+         <tr (click)="navToFundDetail()">
+          <td scope="row"><i  class="fa fa-check-square-o" aria-hidden="true"></i></td>
+          <td>基金4号</td>
+          <td>未募集</td>
+          <td>600万</td>
+          <td></td>
+          <td>2016-12-1</td>
+          <td>制造业</td>
+          <td>徐来</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div>
