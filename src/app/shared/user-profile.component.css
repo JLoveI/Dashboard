@@ -2,6 +2,10 @@
     background: white;
     height: 80px;
 }
+#user-profile ul{
+    flex-direction:row;
+    margin-top:15px;
+}
 
 #user-profile li a{
     color:black !important;
