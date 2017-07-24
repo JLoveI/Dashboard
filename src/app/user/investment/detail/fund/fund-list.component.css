@@ -1,0 +1,15 @@
+.pd-5{
+    padding: 5px;
+}
+
+#fund table tbody tr{
+    cursor: pointer;
+}
+
+.col-center{
+    margin:0 auto 20px;
+}
+
+span{
+    margin-left: 10px;
+}

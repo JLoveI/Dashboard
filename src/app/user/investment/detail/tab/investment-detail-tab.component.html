@@ -1,0 +1,40 @@
+<div class="dashboard" id="tab-info">
+  <nav class="navbar navbar-toggleable-md navbar-inverse mt-3">
+    <button class="navbar-toggler navbar-toggler-right hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbars-tab"
+      aria-controls="navbars-tab" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbars-tab">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link">基本信息</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">经营财报</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">被投项目分析</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">关联文档</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="./fund" routerLinkActive="active" >基金一览</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link" routerLink="./event" routerLinkActive="active">事件安排</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">退出管理</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">财务信息</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="tab-content tab-pannel" id="tab-content">
+        <router-outlet></router-outlet>
+  </div>
+</div>

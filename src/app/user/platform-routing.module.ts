@@ -16,6 +16,24 @@ const routes: Routes = [
             { path: '', loadChildren: './fund/fund.module#FundModule' }
         ]
     },
+    {
+        path: 'investment', component: PlatformComponent,
+        children: [
+            { path: '', loadChildren: './investment/investment.module#InvestmentModule' }
+        ]
+    },
+    {
+        path: 'invester', component: PlatformComponent,
+        children: [
+            { path: '', loadChildren: './invester/invester.module#InvesterModule' }
+        ]
+    },
+    {
+        path: 'library', component: PlatformComponent,
+        children: [
+            { path: '', loadChildren: './library/library.module#LibraryModule' }
+        ]
+    }
 ];
 
 @NgModule({

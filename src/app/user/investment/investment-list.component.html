@@ -1,0 +1,81 @@
+<div class="dashboard" id="investment">
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <a class="navbar-brand">投资项目列表</a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="btn-group ml-auto" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary"><i class="fa fa-plus-square" aria-hidden="true"></i><span class="pd-5">添加</span></button>
+        <button type="button" class="btn btn-secondary"><i class="fa fa-window-close" aria-hidden="true"></i><span class="pd-5">删除</span></button>
+        <button type="button" class="btn btn-secondary"><i class="fa fa-download" aria-hidden="true"></i><span class="pd-5">导出</span></button>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="pd-5">
+    <table class="table table-hover table-bordered">
+      <thead>
+        <tr>
+          <th> <i class="fa {{allChecked ? 'fa-check-square-o' : 'fa-square-o'}}"  aria-hidden="true"></i> </th>
+          <th>被投项目</th>
+          <th>行业</th>
+          <th>获投总计</th>
+          <th>当前阶段</th>
+
+          <th>企业成立时间</th>
+          <th>行业偏好</th>
+          <th>联系人</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr (click)="navToInvestmentDetail()">
+          <td scope="row"><i class="fa fa-square-o" aria-hidden="true"></i></td>
+          <td>史密斯公司</td>
+          <td>电力</td>
+          <td>1000万</td>
+          <td>已B轮</td>
+          <td>2016-12-1</td>
+          <td>互联网</td>
+          <td>张斌</td>
+        </tr>
+       
+         <tr (click)="navToInvestmentDetail()">
+          <td scope="row"><i class="fa {{checked ? 'fa-check-square-o' : 'fa-square-o'}}" aria-hidden="true"></i></td>
+          <td>火炬电动车科技</td>
+          <td>互联网</td>
+          <td>200万</td>
+          <td>已天使轮</td>
+          <td>2016-12-1</td>
+          <td>金融业</td>
+          <td>徐来</td>
+        </tr>
+         <tr (click)="navToInvestmentDetail()">
+          <td scope="row"><i  class="fa fa-check-square-o" aria-hidden="true"></i></td>
+          <td>罗兰信息公司</td>
+          <td>互联网</td>
+          <td>400万</td>
+          <td>已A轮,潜力高</td>
+          <td>2016-12-1</td>
+          <td>金融业</td>
+          <td>张斌</td>
+        </tr>
+
+         <tr (click)="navToInvestmentDetail()">
+          <td scope="row"><i class="fa fa-square-o" aria-hidden="true"></i></td>
+          <td>珠海科技</td>
+          <td>互联网</td>
+          <td>600万</td>
+          <td>即将推出</td>
+          <td>2016-12-1</td>
+          <td>制造业</td>
+          <td>徐来</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div>

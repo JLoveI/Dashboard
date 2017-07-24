@@ -1,0 +1,7 @@
+.pd-5{
+    padding: 5px;
+}
+
+#investment table tbody tr{
+    cursor: pointer;
+}
