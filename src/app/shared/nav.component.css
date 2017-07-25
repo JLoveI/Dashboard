@@ -88,3 +88,6 @@ a.nav-link:hover, .active-link{
   display: none;
 }
 
+.mt-25{
+  margin-top:25px;
+}
