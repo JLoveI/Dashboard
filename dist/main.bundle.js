@@ -6,7 +6,7 @@ webpackJsonp([9],{
 var map = {
 	"./dashboard/dashboard.module": [
 		"../../../../../src/app/user/dashboard/dashboard.module.ts",
-		5
+		6
 	],
 	"./fund/fund.module": [
 		"../../../../../src/app/user/fund/fund.module.ts",
@@ -22,11 +22,11 @@ var map = {
 	],
 	"./library/library.module": [
 		"../../../../../src/app/user/library/library.module.ts",
-		4
+		5
 	],
 	"./user/login/login.module": [
 		"../../../../../src/app/user/login/login.module.ts",
-		6
+		4
 	],
 	"./user/platform.module": [
 		"../../../../../src/app/user/platform.module.ts",
@@ -98,7 +98,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "body{\r\n    background:  #694848;\r\n}", ""]);
 
 // exports
 
@@ -111,7 +111,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<router-outlet></router-outlet>\r\n"
+module.exports = "<router-outlet></router-outlet>"
 
 /***/ }),
 

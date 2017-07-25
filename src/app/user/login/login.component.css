@@ -1,9 +1,9 @@
-.bg{
-    /*background:url("../../../asset/img/bg.jpg");*/
-}
 
-body{
-    background-color:red !important;
+.bg{
+    background: url("../../../assets/img/bg.jpg") no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding-top: 1px;
 }
 .login-page{
     width: 750px;
