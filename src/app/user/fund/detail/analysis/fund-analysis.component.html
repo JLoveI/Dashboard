@@ -1,0 +1,71 @@
+<div class="row">
+  <div class="col-6">
+    <div class="form-group pd-5">
+      <div class="row">
+        <select class="form-control mb-4 mr-sm-8 mb-sm-8 col-8 ml-4">
+        <option selected>针对所有项目</option>
+      </select>
+      </div>
+    </div>
+
+    <table class="table table-hover table-bordered">
+      <thead>
+        <tr class="danger">
+          <th>分析指标</th>
+          <th>分析值</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>投资项目个数</th>
+          <td>3个</td>
+        </tr>
+        <tr>
+          <th>投资人个数</th>
+          <td>15个</td>
+        </tr>
+        <tr>
+          <th>累计投资总额</th>
+          <td>2200万 人民币</td>
+        </tr>
+        <tr>
+          <th>累计分红</th>
+          <td>213万 人民币</td>
+        </tr>
+        <tr>
+          <th>IRR</th>
+          <td>18.4%</td>
+        </tr>
+        <tr>
+          <th>收益倍数</th>
+          <td>1.6倍</td>
+        </tr>
+        <tr>
+          <th>收益率</th>
+          <td>52.3%</td>
+        </tr>
+        <tr>
+          <th>已实现投资收益</th>
+          <td>982万 人民币</td>
+        </tr>
+        <tr>
+          <th>预计收益</th>
+          <td>782万 人民币</td>
+        </tr>
+        <tr>
+          <th>估值</th>
+          <td>3500万 人民币</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+  <div class="col-6">
+    <div id="analysis-by-investment" >
+      <div  [chart]="barChart"></div>
+    </div>
+    <div id="analysis-by-year">
+      <div  [chart]="lineChart"></div>
+    </div>
+  </div>
+</div>

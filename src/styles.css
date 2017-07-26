@@ -14,3 +14,7 @@ body{
     min-height: 700px;
     border-top:1px solid seashell;
 }
+
+.tab-content{
+    padding:20px;
+}

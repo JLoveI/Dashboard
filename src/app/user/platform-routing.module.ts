@@ -33,6 +33,18 @@ const routes: Routes = [
         children: [
             { path: '', loadChildren: './library/library.module#LibraryModule' }
         ]
+    },
+    {
+        path: 'event', component: PlatformComponent,
+        children: [
+            { path: '', loadChildren: './event/event.module#EventModule' }
+        ]
+    },
+    {
+        path: 'note', component: PlatformComponent,
+        children: [
+            { path: '', loadChildren: './note/note.module#NoteModule' }
+        ]
     }
 ];
 

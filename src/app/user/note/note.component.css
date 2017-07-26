@@ -1,0 +1,23 @@
+.note{
+    width:360px;
+    padding: 30px;
+    display: inline-block;
+}
+
+.card{
+    height: 300px;
+}
+
+.card span{
+    float:right;
+}
+
+.col-center{
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.a-danger{
+    color:red !important;
+    text-decoration: underline;
+}

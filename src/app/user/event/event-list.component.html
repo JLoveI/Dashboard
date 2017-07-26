@@ -1,0 +1,102 @@
+<div class="dashboard" id="event">
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <a class="navbar-brand">事件管理</a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="btn-group ml-auto" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary"><i class="fa fa-plus-square" aria-hidden="true"></i><span class="pd-5">添加事件</span></button>
+        <button type="button" class="btn btn-secondary"><i class="fa fa-file-archive-o" aria-hidden="true"></i><span class="pd-5">事件模板</span></button>
+        <button type="button" class="btn btn-secondary"><i class="fa fa-sign-in" aria-hidden="true"></i><span class="pd-5">投资项目事件触发器</span></button>
+      </div>
+    </div>
+  </nav>
+
+
+  <section>
+    <div class="form-group  mt-3 pd-5">
+      <div class="row">
+        <label class="mr-sm-2 ml-sm-2 col-form-label">事件一览</label>
+          <div class="col-2">
+            <select class="form-control mb-4">
+              <option selected>30天内</option>
+              <option value="1">60日内</option>
+              <option value="2">90天内</option>
+              <option value="3">180天内</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <select class="form-control mb-4">
+                  <option selected>全部事件</option>
+                </select>
+          </div>
+      </div>
+    </div>
+
+    <table class="table table-hover table-bordered">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>时间</th>
+          <th>事件</th>
+          <th>事件类型</th>
+          <th>优先级</th>
+          <th>备注</th>
+          <th>状态</th>
+          <th>相关人</th>
+          <th>删除</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>2017年7月14日</td>
+          <td>被投公司二季报盈利波动</td>
+          <td>触发事件</td>
+          <td>高</td>
+          <td>投资经理需尽快处理！！</td>
+          <td>未办理</td>
+          <td>小张</td>
+          <td><i class="fa fa-times" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>2017年7月29日</td>
+          <td>去见客户并进行路演</td>
+          <td>个人代办</td>
+          <td>一般</td>
+          <td></td>
+          <td>未办理</td>
+          <td>小李</td>
+          <td><i class="fa fa-times" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>2017年8月2日</td>
+          <td>基金B轮融资开始</td>
+          <td>基金事件</td>
+          <td>高</td>
+          <td>基金 – 基金3号</td>
+          <td>未办理</td>
+          <td>小王</td>
+          <td><i class="fa fa-times" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>2017年8月4日</td>
+          <td>证监会上会</td>
+          <td>被投项目事件</td>
+          <td>高</td>
+          <td>被投项目-史密斯蓄电池公司关注上会事宜</td>
+          <td>未办理</td>
+          <td>小李</td>
+          <td><i class="fa fa-times" aria-hidden="true"></i></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div>
